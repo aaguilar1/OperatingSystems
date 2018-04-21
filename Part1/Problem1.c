@@ -87,7 +87,7 @@ void programC(){
     
     int counter = 0;
 
-    while(getline(&buffer,&bufsize,fp) != EOF && counter< size)
+    while(getline(&buffer,&bufsize,fp) != EOF && counter < size)
     {
      arr[counter] = atoi(buffer);
      counter++;
@@ -139,7 +139,7 @@ void *sum(void* arg){
       {
         sum += in->array[i];
       }
-     printf("Sum is:%d\n", sum); 
+     printf("Sum: %d\n", sum); 
 }
 
 void *min(void* arg){
@@ -150,7 +150,7 @@ void *min(void* arg){
           if(min > in->array[i])
             min = in->array[i];
         }
-    printf("Min is:%d\n", min);
+    printf("Min: %d\n", min);
 }
 
 void *max(void* arg){
@@ -161,6 +161,6 @@ void *max(void* arg){
           if(max < in->array[i])
             max = in->array[i];
         }
-      printf("Max is:%d\n", max);
+      printf("Max: %d\n", max);
 }
 
